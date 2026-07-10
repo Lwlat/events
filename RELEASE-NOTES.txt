@@ -1,0 +1,11 @@
+LwLAT Events v1.1
+
+This release establishes the first polished homepage version of the platform.
+
+Upload the contents of this package to the root of your GitHub repository, replacing the existing files.
+
+Suggested commit message:
+
+Release LwLAT Events v1.1
+
+Netlify should then deploy automatically from the main branch.
