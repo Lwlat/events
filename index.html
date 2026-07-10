@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LwLAT Events</title>
+  <meta name="description" content="Learning Without Limits Academy Trust events.">
+  <link rel="stylesheet" href="app/css/styles.css">
+  <script src="app/js/home.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-three"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="media/logos/lwlat-logo.png" alt="Learning Without Limits Academy Trust">
+    </a>
+    <nav class="nav">
+      <a href="#events">Events</a>
+      <a href="/check-in/">Check-in</a>
+      <a href="/admin/">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Learning Without Limits Academy Trust</p>
+        <h1>Events</h1>
+        <p class="lead">Winning hearts and inspiring minds to learn without limits</p>
+      </div>
+      <div class="hero-panel glass" id="featured-event">
+        <p class="panel-label">Current focus</p>
+        <h2>Loading event…</h2>
+      </div>
+    </section>
+
+    
+    <section class="events-section" id="events">
+      <div class="section-heading">
+        <p class="eyebrow">Featured event</p>
+        <h2>Choose an event</h2>
+      </div>
+
+      <div class="featured-event-wrap" id="featured-event-card"></div>
+
+      <div class="more-events-heading">
+        <p class="eyebrow">More events</p>
+      </div>
+
+      <div class="event-grid" id="event-grid"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <strong>LwLAT Events</strong>
+    <span>Winning hearts and inspiring minds to learn without limits</span>
+  </footer>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', user => {
+        if (!user && window.location.hash.includes('invite_token')) {
+          window.netlifyIdentity.open();
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

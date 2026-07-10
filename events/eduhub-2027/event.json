@@ -1,0 +1,31 @@
+{
+  "id": "eduhub-2027",
+  "title": "EduHub 2027",
+  "subtitle": "A professional learning event for educators, leaders and partners.",
+  "date": "Tuesday 5 January 2027",
+  "time": "09:00 - 15:30",
+  "venue": "Learning Without Limits Academy Trust",
+  "capacity": 250,
+  "status": "Registration Open",
+  "statusClass": "open",
+  "registrationOpen": true,
+  "featured": true,
+  "cardImage": "media/events/eduhub-2027/card.jpg",
+  "heroImage": "media/events/eduhub-2027/hero.jpg",
+  "eventLogo": "media/events/eduhub-2027/logo.png",
+  "description": "EduHub 2027 brings together educators, leaders and partners for a day of professional learning, discussion and shared practice.",
+  "lunchOptions": [
+    "Hot lunch option",
+    "Vegetarian option",
+    "Jacket potato option",
+    "Packed lunch / no lunch required"
+  ],
+  "session1": [
+    "Leadership for Inclusive Practice",
+    "Curriculum, Belonging and Ambition"
+  ],
+  "session2": [
+    "Using Data Without Losing the Child",
+    "Attendance, Safeguarding and Partnership"
+  ]
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Check-in | LwLAT Events</title>
+  <link rel="stylesheet" href="/app/css/styles.css">
+  <script src="/app/js/checkin.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/index.html"><img src="/media/logos/lwlat-logo.png" alt="Learning Without Limits Academy Trust"></a>
+    <nav class="nav"><a href="/index.html#events">Events</a><a href="/admin/">Admin</a></nav>
+  </header>
+
+  <main class="checkin-page">
+    <section class="checkin-hero glass">
+      <p class="eyebrow">LwLAT Events</p>
+      <h1>Check-in</h1>
+      <p>Import a CSV, search delegates, mark attendance and print 38×90 labels.</p>
+    </section>
+
+    <section class="checkin-grid">
+      <article class="glass tool-card">
+        <p class="eyebrow">Import</p>
+        <h2>Load delegates</h2>
+        <label class="button primary" for="csv-file">Import CSV</label>
+        <input id="csv-file" type="file" accept=".csv,text/csv" hidden>
+        <p id="import-status">No file imported yet.</p>
+      </article>
+
+      <article class="glass tool-card">
+        <p class="eyebrow">Search</p>
+        <h2>Find delegate</h2>
+        <input id="search" type="search" placeholder="Search name, email or organisation">
+        <div id="results"></div>
+      </article>
+
+      <article class="glass tool-card">
+        <p class="eyebrow">Selected</p>
+        <h2 id="selected-name">No delegate selected</h2>
+        <div id="selected-details">Import a CSV and search for a delegate.</div>
+        <button class="button primary" id="check-in" disabled>Check in</button>
+        <button class="button secondary" id="print-badge" disabled>Print badge</button>
+      </article>
+
+      <article class="glass tool-card">
+        <p class="eyebrow">Badge</p>
+        <div class="badge-preview">
+          <div id="badge" class="badge">
+            <div class="badge-name">Delegate name</div>
+            <div class="badge-role">Job Role</div>
+            <div class="badge-org">Establishment</div>
+            <div class="badge-rule"></div>
+            <div class="badge-grid">
+              <div class="badge-label">Session 1</div><div class="badge-value badge-session-1">session information</div>
+              <div class="badge-label">Session 2</div><div class="badge-value badge-session-2">session information</div>
+              <div class="badge-label">Food</div><div class="badge-value badge-food">food information</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
