@@ -55,3 +55,18 @@ Released: 10 July 2026
 - Added proper spacing between the event hero and registration panel.
 - Increased spacing between fieldsets, field rows, labels and inputs.
 - Set the EduHub event logo path to media/events/eduhub-2027/eduhub.png.
+
+
+## Version 1.3.0
+
+### Added
+- Clear Events and EduHub Professional Learning booking routes.
+- EduHub branding using the supplied logo.
+- LwLAT patterned backdrop on the public homepage.
+- Available opportunities section.
+- Booking platform benefits strip.
+- EduHub logo on the event booking page.
+- Responsive desktop and mobile layouts.
+
+### Changed
+- Public homepage now clearly identifies the site as an events and professional learning booking platform.

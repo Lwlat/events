@@ -1,4 +1,3 @@
-LwLAT Events
-Version 1.1.1
-Tile background and registration spacing fix
-Released 10 July 2026
+LwLAT Events & Professional Learning
+Version 1.3.0
+Public booking platform homepage

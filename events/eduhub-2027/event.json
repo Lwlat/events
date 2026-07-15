@@ -11,7 +11,7 @@
   "registrationOpen": true,
   "featured": true,
   "cardImage": "",
-  "heroImage": "media/events/eduhub-2027/hero.jpg",
+  "heroImage": "",
   "eventLogo": "media/events/eduhub-2027/eduhub.png",
   "description": "EduHub 2027 brings together educators, leaders and partners for a day of professional learning, discussion and shared practice.",
   "lunchOptions": [
@@ -27,5 +27,6 @@
   "session2": [
     "Using Data Without Losing the Child",
     "Attendance, Safeguarding and Partnership"
-  ]
+  ],
+  "category": "Professional Learning"
 }
