@@ -1,1 +1,0 @@
-Add hero.jpg, card.jpg and optional logo.png here.
