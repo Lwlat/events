@@ -1,0 +1,2 @@
+Temporary admin code: 1234
+This is a client-side visual lock only. It is suitable as a temporary barrier, not secure authentication.

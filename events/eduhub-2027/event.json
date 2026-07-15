@@ -10,9 +10,9 @@
   "statusClass": "open",
   "registrationOpen": true,
   "featured": true,
-  "cardImage": "media/events/eduhub-2027/card.jpg",
+  "cardImage": "",
   "heroImage": "media/events/eduhub-2027/hero.jpg",
-  "eventLogo": "media/events/eduhub-2027/logo.png",
+  "eventLogo": "media/events/eduhub-2027/eduhub.png",
   "description": "EduHub 2027 brings together educators, leaders and partners for a day of professional learning, discussion and shared practice.",
   "lunchOptions": [
     "Hot lunch option",

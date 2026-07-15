@@ -1,4 +1,4 @@
 LwLAT Events
-Version 1.1.0
-Homepage redesign
+Version 1.1.1
+Tile background and registration spacing fix
 Released 10 July 2026

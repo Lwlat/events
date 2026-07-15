@@ -44,3 +44,14 @@ Released: 10 July 2026
 - Walk-in registration.
 - Badge reprint.
 - Attendance reports.
+
+
+## Version 1.1.1
+Released: 10 July 2026
+
+### Fixed
+- Removed the LwLAT logo image from the EduHub homepage tile background.
+- Added a clean branded gradient fallback until a proper event card image is supplied.
+- Added proper spacing between the event hero and registration panel.
+- Increased spacing between fieldsets, field rows, labels and inputs.
+- Set the EduHub event logo path to media/events/eduhub-2027/eduhub.png.
