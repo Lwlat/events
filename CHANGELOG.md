@@ -70,3 +70,13 @@ Released: 10 July 2026
 
 ### Changed
 - Public homepage now clearly identifies the site as an events and professional learning booking platform.
+
+
+## Version 1.3.1
+
+### Fixed
+- Stretched homepage route cards.
+- Oversized EduHub logo inside its tile.
+- Inconsistent opportunity-card heights.
+- Overcrowded wording inside homepage tiles.
+- Mobile card sizing and spacing.
