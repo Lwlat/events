@@ -80,3 +80,18 @@ Released: 10 July 2026
 - Inconsistent opportunity-card heights.
 - Overcrowded wording inside homepage tiles.
 - Mobile card sizing and spacing.
+
+
+## Version 1.4.0
+
+### Added
+- Clean white navigation header.
+- Branded teal homepage hero using the supplied LwLAT backdrop.
+- White Events and EduHub pathway cards.
+- Larger EduHub logo.
+- Platform benefits strip.
+- Compact opportunity cards.
+- Cleaner desktop and mobile navigation.
+
+### Changed
+- Public homepage restyled to match the approved mock-up.

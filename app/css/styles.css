@@ -961,3 +961,528 @@ body::after {
     font-size: clamp(3rem, 17vw, 5.5rem);
   }
 }
+
+
+/* v1.4 clean public booking homepage */
+.clean-booking-home {
+  margin: 0;
+  min-height: 100vh;
+  background: #f5f8f9;
+  color: #12343d;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.clean-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  min-height: 82px;
+  padding: 12px max(28px, calc((100vw - 1380px) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  background: rgba(255,255,255,.97);
+  border-bottom: 1px solid #dce8ea;
+  box-shadow: 0 4px 20px rgba(9,48,58,.07);
+}
+
+.clean-brand img {
+  display: block;
+  width: min(355px, 44vw);
+  max-height: 58px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.clean-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.clean-nav a {
+  position: relative;
+  color: #12343d;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.clean-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -13px;
+  height: 3px;
+  border-radius: 99px;
+  background: #009189;
+  transform: scaleX(0);
+  transition: transform .18s ease;
+}
+
+.clean-nav a:hover::after,
+.clean-nav a.active::after {
+  transform: scaleX(1);
+}
+
+.mobile-nav-button {
+  display: none;
+}
+
+.clean-hero {
+  background:
+    linear-gradient(90deg, rgba(3,45,55,.90), rgba(0,94,98,.76)),
+    url("/media/backgrounds/LwLAT%20confernce%20backdrop.png") center / cover no-repeat;
+}
+
+.clean-hero-inner {
+  width: min(1380px, calc(100% - 44px));
+  margin: 0 auto;
+  padding: 36px 0 28px;
+  display: grid;
+  grid-template-columns: .92fr 1.45fr;
+  gap: 34px;
+  align-items: center;
+}
+
+.clean-hero-copy {
+  color: #fff;
+}
+
+.clean-kicker {
+  margin: 0 0 14px;
+  color: rgba(255,255,255,.72);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.clean-hero-copy h1 {
+  margin: 0;
+  font-size: clamp(3.1rem, 6.2vw, 6rem);
+  line-height: .94;
+  letter-spacing: -.065em;
+}
+
+.clean-hero-copy h1 span {
+  display: block;
+  color: #27b8b1;
+}
+
+.clean-lead {
+  max-width: 650px;
+  margin: 24px 0 0;
+  font-size: clamp(1.08rem, 1.8vw, 1.36rem);
+  line-height: 1.52;
+}
+
+.clean-accent-line {
+  width: 66px;
+  height: 4px;
+  margin: 30px 0;
+  border-radius: 99px;
+  background: #dfe512;
+}
+
+.clean-tagline {
+  margin: 0;
+  max-width: 650px;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.clean-route-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 22px;
+}
+
+.clean-route-card {
+  min-height: 455px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  color: #173742;
+  text-align: center;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #d5e4e6;
+  border-radius: 18px;
+  box-shadow: 0 16px 38px rgba(3,47,57,.16);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.clean-route-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 23px 48px rgba(3,47,57,.20);
+}
+
+.route-symbol {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: #e5f6f5;
+  color: #007b7c;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.clean-route-card h2 {
+  margin: 0;
+  color: #008c8c;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1;
+}
+
+.clean-route-card > p {
+  max-width: 310px;
+  margin: 18px auto 12px;
+  color: #4a5e66;
+  line-height: 1.45;
+}
+
+.clean-route-card ul {
+  width: min(290px, 100%);
+  margin: 12px auto 24px;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  text-align: left;
+}
+
+.clean-route-card li {
+  position: relative;
+  padding-left: 28px;
+}
+
+.clean-route-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #009189;
+  border-radius: 999px;
+  color: #009189;
+  font-size: .72rem;
+  font-weight: 900;
+}
+
+.eduhub-card img {
+  display: block;
+  width: 100%;
+  max-height: 155px;
+  margin: 0 auto 8px;
+  object-fit: contain;
+}
+
+.eduhub-card li::before {
+  border-color: #6F2789;
+  color: #6F2789;
+}
+
+.clean-route-button {
+  margin-top: auto;
+  padding: 13px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 9px;
+  background: #008f91;
+  color: #fff;
+  font-weight: 800;
+}
+
+.clean-benefits {
+  width: 100%;
+  padding: 20px max(28px, calc((100vw - 1320px) / 2));
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  background: #eef8f9;
+  border-bottom: 1px solid #d9e8ea;
+}
+
+.clean-benefits article {
+  padding: 6px 22px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.clean-benefits article + article {
+  border-left: 1px solid #bfdadd;
+}
+
+.benefit-symbol {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #008f91;
+  border-radius: 14px;
+  color: #008f91;
+  font-size: .72rem;
+  font-weight: 900;
+}
+
+.clean-benefits strong {
+  display: block;
+  color: #006b70;
+}
+
+.clean-benefits p {
+  margin: 3px 0 0;
+  font-size: .86rem;
+  line-height: 1.35;
+}
+
+.clean-available {
+  width: min(1380px, calc(100% - 44px));
+  margin: 0 auto;
+  padding: 36px 0 46px;
+}
+
+.clean-section-heading {
+  text-align: center;
+}
+
+.clean-section-heading p {
+  margin: 0;
+  color: #008c8c;
+  font-weight: 800;
+}
+
+.clean-section-heading h2 {
+  margin: 4px 0 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  letter-spacing: -.04em;
+}
+
+.clean-opportunity-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 22px;
+}
+
+.clean-opportunity-card {
+  min-height: 315px;
+  display: flex;
+  flex-direction: column;
+  color: #15343e;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #dbe7e9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(13,48,58,.10);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.clean-opportunity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(13,48,58,.15);
+}
+
+.clean-card-media {
+  position: relative;
+  min-height: 145px;
+  padding: 22px;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(135deg, rgba(0,145,137,.92), rgba(1,66,76,.93)),
+    url("/media/backgrounds/LwLAT%20confernce%20backdrop.png") center / cover;
+}
+
+.training-card .clean-card-media {
+  background: linear-gradient(135deg, #f4eff8, #fff);
+}
+
+.clean-media-word {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.clean-card-type {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  margin: 0;
+  padding: 6px 9px;
+  border-radius: 6px;
+  background: #008f91;
+  color: #fff;
+  font-size: .68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.training-card .clean-card-type {
+  background: #6F2789;
+}
+
+.clean-card-logo {
+  width: 100%;
+  max-height: 110px;
+  object-fit: contain;
+}
+
+.clean-opportunity-body {
+  flex: 1;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.clean-opportunity-body h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.clean-opportunity-meta {
+  margin: 14px 0;
+  display: grid;
+  gap: 5px;
+  color: #4c6067;
+  font-size: .84rem;
+}
+
+.clean-opportunity-body strong {
+  margin-top: auto;
+  color: #008f91;
+}
+
+.training-card .clean-opportunity-body strong {
+  color: #6F2789;
+}
+
+.clean-footer {
+  padding: 22px max(28px, calc((100vw - 1380px) / 2));
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr)) auto;
+  gap: 24px;
+  align-items: center;
+  background: #005b61;
+  color: #fff;
+}
+
+.clean-footer div {
+  display: grid;
+  gap: 3px;
+}
+
+.clean-footer span {
+  color: rgba(255,255,255,.78);
+  font-size: .84rem;
+}
+
+.clean-footer a {
+  padding: 12px 18px;
+  border: 1px solid rgba(255,255,255,.62);
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .clean-hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .clean-opportunity-grid {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+
+  .clean-benefits {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+
+  .clean-benefits article:nth-child(3) {
+    border-left: 0;
+  }
+
+  .clean-footer {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .clean-header {
+    min-height: 68px;
+    padding: 10px 16px;
+    flex-wrap: wrap;
+  }
+
+  .clean-brand img {
+    width: min(270px, 70vw);
+    max-height: 48px;
+  }
+
+  .mobile-nav-button {
+    display: inline-flex;
+    border: 1px solid #bfdadd;
+    border-radius: 8px;
+    padding: 9px 12px;
+    background: #fff;
+    color: #12343d;
+    font-weight: 700;
+  }
+
+  .clean-nav {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .clean-nav.open {
+    display: flex;
+  }
+
+  .clean-nav a::after {
+    display: none;
+  }
+
+  .clean-hero-inner {
+    width: min(100% - 24px, 1380px);
+    padding: 28px 0;
+  }
+
+  .clean-route-grid,
+  .clean-benefits,
+  .clean-opportunity-grid,
+  .clean-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .clean-route-card {
+    min-height: 420px;
+  }
+
+  .clean-benefits article + article {
+    border-left: 0;
+    border-top: 1px solid #bfdadd;
+  }
+
+  .clean-footer {
+    padding: 24px 18px;
+  }
+}
