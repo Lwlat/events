@@ -1,10 +1,10 @@
 {
   "id": "eduhub-2027",
-  "title": "EduHub 2027",
-  "subtitle": "A professional learning event for educators, leaders and partners.",
+  "title": "EduHub 27",
+  "subtitle": "A one-day professional learning conference for schools and professionals across our Trust.",
   "date": "Tuesday 5 January 2027",
   "time": "09:00 - 15:30",
-  "venue": "Learning Without Limits Academy Trust",
+  "venue": "Leicester",
   "capacity": 250,
   "status": "Registration Open",
   "statusClass": "open",
@@ -12,7 +12,7 @@
   "featured": true,
   "cardImage": "",
   "heroImage": "",
-  "eventLogo": "media/events/eduhub-2027/eduhub.png",
+  "eventLogo": "media/events/eduhub-2027/eduhub-27.png",
   "description": "EduHub 2027 brings together educators, leaders and partners for a day of professional learning, discussion and shared practice.",
   "lunchOptions": [
     "Hot lunch option",

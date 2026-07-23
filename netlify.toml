@@ -2,6 +2,23 @@
   publish = "."
 
 [[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/dashboard"
+  to = "/dashboard.html"
+  status = 200
+
+[[redirects]]
   from = "/event/*"
   to = "/event/index.html"
   status = 200
@@ -9,9 +26,4 @@
 [[redirects]]
   from = "/check-in/*"
   to = "/check-in/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/admin/*"
-  to = "/admin/index.html"
   status = 200

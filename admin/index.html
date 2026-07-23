@@ -3,62 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>LwLAT Events Manager</title>
-  <link rel="icon" href="/media/logos/lwlat-logo.png">
+  <title>EduHub Training Manager | LwLAT</title>
+  <meta name="robots" content="noindex">
 </head>
 <body>
-<div id="admin-lock-screen" class="admin-lock-screen">
-  <div class="admin-lock-card glass">
-    <img src="/media/logos/lwlat-logo.png" alt="Learning Without Limits Academy Trust" class="admin-lock-logo">
-    <p class="eyebrow">LwLAT Events</p>
-    <h1>Admin access</h1>
-    <p>Enter the admin code to continue.</p>
-    <label for="admin-password">Admin code</label>
-    <input id="admin-password" type="password" inputmode="numeric" autocomplete="current-password" placeholder="Enter code">
-    <button class="button primary" id="admin-unlock-button" type="button">Open admin</button>
-    <p id="admin-lock-message" class="admin-lock-message" role="alert"></p>
-  </div>
-</div>
-<div id="admin-protected-content" hidden>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script src="https://unpkg.com/decap-cms@^3.8.0/dist/decap-cms.js"></script>
-</div>
-<script>
-(function () {
-  const PASSWORD = '1234';
-  const unlocked = sessionStorage.getItem('lwlat-admin-unlocked') === 'yes';
-  const lock = document.getElementById('admin-lock-screen');
-  const content = document.getElementById('admin-protected-content');
-  const input = document.getElementById('admin-password');
-  const button = document.getElementById('admin-unlock-button');
-  const message = document.getElementById('admin-lock-message');
-
-  function showAdmin() {
-    sessionStorage.setItem('lwlat-admin-unlocked', 'yes');
-    if (lock) lock.hidden = true;
-    if (content) content.hidden = false;
-  }
-
-  function tryUnlock() {
-    if (input && input.value === PASSWORD) {
-      showAdmin();
-    } else if (message) {
-      message.textContent = 'Incorrect admin code.';
-    }
-  }
-
-  if (unlocked) {
-    showAdmin();
-  } else {
-    if (content) content.hidden = true;
-    if (lock) lock.hidden = false;
-  }
-
-  if (button) button.addEventListener('click', tryUnlock);
-  if (input) input.addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') tryUnlock();
-  });
-})();
-</script>
+  <script src="https://unpkg.com/decap-cms@3.8.3/dist/decap-cms.js"></script>
 </body>
 </html>

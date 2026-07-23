@@ -123,3 +123,35 @@ collections:
           - "Sponsor"
           - "Background"
       - { label: "Notes", name: "notes", widget: "text", required: false }
+
+  - name: "training_manager"
+    label: "Training Manager"
+    files:
+      - name: "training_opportunities"
+        label: "EduHub Training Opportunities"
+        file: "data/trainings.json"
+        format: "json"
+        fields:
+          - label: "Training opportunities"
+            name: "trainings"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.dateDisplay}}"
+            fields:
+              - { label: "Unique ID", name: "id", widget: "string", hint: "Lowercase, no spaces" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "select", options: ["Conference","Leadership","SEND","Safeguarding","Teaching & Learning","Business Support","Other"] }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+              - { label: "Date shown", name: "dateDisplay", widget: "string" }
+              - { label: "Start time", name: "startTime", widget: "string" }
+              - { label: "End time", name: "endTime", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Delivery", name: "delivery", widget: "select", options: ["In person","Online","Blended"] }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Audience", name: "audience", widget: "string" }
+              - { label: "Presenter", name: "presenter", widget: "string", required: false }
+              - { label: "Capacity", name: "capacity", widget: "number", required: false }
+              - { label: "Booking deadline", name: "bookingDeadline", widget: "string", required: false }
+              - { label: "Booking open", name: "bookingOpen", widget: "boolean", default: true }
+              - { label: "Featured", name: "featured", widget: "boolean", default: false }
+              - { label: "Logo or image", name: "image", widget: "image", required: false }
+              - { label: "Extra question", name: "additionalQuestion", widget: "string", required: false }

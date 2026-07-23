@@ -10,7 +10,7 @@
 <a class="v2-brand" href="index.html"><img src="media/logos/lwlat-logo-colour.png" alt="Learning Without Limits Academy Trust"></a>
 <button class="v2-menu" type="button" aria-expanded="false" aria-controls="v2-nav">Menu</button>
 <nav class="v2-nav" id="v2-nav">
-<a class="active" href="index.html">Home</a><a href="#available">Events</a><a href="professional-learning.html">Professional Learning</a><a href="#about">About</a><a href="mailto:communications@lwlat.org.uk">Contact</a><a class="v2-signin" href="admin.html">Sign in</a>
+<a class="active" href="index.html">Home</a><a href="#available">Events</a><a href="professional-learning.html">Professional Learning</a><a href="#about">About</a><a href="mailto:communications@lwlat.org.uk">Contact</a><a class="v2-signin" href="dashboard.html">Sign in</a>
 </nav>
 </header>
 
@@ -54,7 +54,7 @@
 <footer class="v2-footer">
 <div class="v2-footer-brand"><img src="media/logos/lwlat-logo-colour.png" alt="Learning Without Limits Academy Trust"><p>Winning hearts and inspiring minds to learn without limits.</p></div>
 <div><strong>Quick links</strong><a href="#available">Events</a><a href="professional-learning.html">Professional Learning</a><a href="#about">About</a><a href="mailto:communications@lwlat.org.uk">Contact</a></div>
-<div><strong>Help</strong><a href="mailto:communications@lwlat.org.uk">communications@lwlat.org.uk</a><a href="admin.html">Sign in</a></div>
+<div><strong>Help</strong><a href="mailto:communications@lwlat.org.uk">communications@lwlat.org.uk</a><a href="dashboard.html">Sign in</a></div>
 <div class="v2-footer-bottom">© 2026 Learning Without Limits Academy Trust.</div>
 </footer>
 
@@ -62,4 +62,16 @@
 const b=document.querySelector('.v2-menu'),n=document.getElementById('v2-nav');
 b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open')});
 </script>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", function(user) {
+    if (!user && window.location.hash.indexOf("invite_token") !== -1) {
+      window.netlifyIdentity.open("signup");
+    }
+  });
+}
+</script>
+
 </body></html>

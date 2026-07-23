@@ -1,8 +1,13 @@
+# EduHub content editor
+/admin /admin/index.html 200!
+/admin/ /admin/index.html 200!
+/admin/* /admin/index.html 200!
+
+# Existing dashboard
+/dashboard /dashboard.html 200
+/dashboard/ /dashboard.html 200
+
 /event /event/index.html 200
 /event/ /event/index.html 200
 /check-in /check-in/index.html 200
 /check-in/ /check-in/index.html 200
-/admin /admin/index.html 200
-/admin/ /admin/index.html 200
-
-/admin/* /admin/index.html 200

@@ -1,12 +1,39 @@
-Open /admin/ and choose Training Manager > EduHub Training Opportunities.
+CORRECT ADMIN ROUTES
 
-Add each course using the on-screen form and publish the change.
+Editable EduHub Training Manager:
+/admin/
 
-Bookings are collected by Netlify under:
+Existing password dashboard:
+/dashboard.html
+
+The two areas must not share the same /admin route.
+
+After uploading this package, open:
+/admin/
+
+You should see the Netlify Identity login followed by Decap CMS.
+
+Then choose:
+Training Manager
+> EduHub Training Opportunities
+
+NETLIFY SETUP REQUIRED
+
+1. Site configuration > Identity > Enable Identity
+2. Identity > Registration preferences > Invite only
+3. Identity > Services > Enable Git Gateway
+4. Invite your email address as an Identity user
+5. Accept the invitation email
+6. Log in at /admin/
+
+BOOKING EMAILS
+
+In Netlify:
+Forms > Form notifications
+
+Choose:
 eduhub-training-booking
 
-In Netlify Forms, create submission notifications for:
+Send notifications to:
 kmadia@lwlat.org.uk
 communications@lwlat.org.uk
-
-The Training Manager requires GitHub deployment, Netlify Identity and Git Gateway.
