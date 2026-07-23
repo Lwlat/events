@@ -1,0 +1,12 @@
+Open /admin/ and choose Training Manager > EduHub Training Opportunities.
+
+Add each course using the on-screen form and publish the change.
+
+Bookings are collected by Netlify under:
+eduhub-training-booking
+
+In Netlify Forms, create submission notifications for:
+kmadia@lwlat.org.uk
+communications@lwlat.org.uk
+
+The Training Manager requires GitHub deployment, Netlify Identity and Git Gateway.

@@ -1,3 +1,3 @@
 LwLAT Events & Professional Learning
-Version 1.4.0
-Clean public booking homepage
+Version 2.1.0
+EduHub Training Manager
