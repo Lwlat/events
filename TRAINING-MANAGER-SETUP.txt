@@ -1,0 +1,14 @@
+CMS CONFIGURATION FIX
+
+The wildcard /admin/* redirect has been removed because it prevented /admin/config.yml from loading.
+
+After deployment, open:
+https://lwlat-events-training.netlify.app/admin/
+
+The editable Training Manager should now load normally.
+
+Required Netlify settings:
+- Identity enabled
+- Registration set to Invite only
+- Git Gateway enabled
+- Your email invited as an Identity user

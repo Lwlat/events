@@ -1,0 +1,2 @@
+Backdrop file: media/backgrounds/LwLAT confernce backdrop.png
+The filename is intentionally preserved exactly as supplied.
