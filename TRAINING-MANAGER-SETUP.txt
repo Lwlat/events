@@ -1,39 +1,14 @@
-CORRECT ADMIN ROUTES
+CMS CONFIGURATION FIX
 
-Editable EduHub Training Manager:
-/admin/
+The wildcard /admin/* redirect has been removed because it prevented /admin/config.yml from loading.
 
-Existing password dashboard:
-/dashboard.html
+After deployment, open:
+https://lwlat-events-training.netlify.app/admin/
 
-The two areas must not share the same /admin route.
+The editable Training Manager should now load normally.
 
-After uploading this package, open:
-/admin/
-
-You should see the Netlify Identity login followed by Decap CMS.
-
-Then choose:
-Training Manager
-> EduHub Training Opportunities
-
-NETLIFY SETUP REQUIRED
-
-1. Site configuration > Identity > Enable Identity
-2. Identity > Registration preferences > Invite only
-3. Identity > Services > Enable Git Gateway
-4. Invite your email address as an Identity user
-5. Accept the invitation email
-6. Log in at /admin/
-
-BOOKING EMAILS
-
-In Netlify:
-Forms > Form notifications
-
-Choose:
-eduhub-training-booking
-
-Send notifications to:
-kmadia@lwlat.org.uk
-communications@lwlat.org.uk
+Required Netlify settings:
+- Identity enabled
+- Registration set to Invite only
+- Git Gateway enabled
+- Your email invited as an Identity user
