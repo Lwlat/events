@@ -1,3 +1,0 @@
-LwLAT Events & Professional Learning
-Version 2.4.0
-CMS configuration routing fixed
