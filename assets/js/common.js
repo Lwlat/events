@@ -1,2 +1,0 @@
-function esc(value){return String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));}
-async function getTrainings(){const r=await fetch("/data/trainings.json",{cache:"no-store"});if(!r.ok)throw new Error("Unable to load training data");const d=await r.json();return Array.isArray(d.trainings)?d.trainings:[];}
