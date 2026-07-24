@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Booking received | LwLAT</title><link rel="stylesheet" href="/assets/css/site.css"></head><body>
+<header class="site-header"><div class="header-inner">
+<a class="brand" href="/"><img src="/media/logos/lwlat-logo.png" alt="Learning Without Limits Academy Trust"><span>Events & Professional Learning</span></a>
+<nav><a href="/">Events</a><a href="/professional-learning.html">Professional Learning</a></nav>
+</div></header>
+<main><section><div class="panel"><p class="eyebrow">Booking received</p><h1>Thank you</h1><p>Your booking has been submitted successfully. The team will contact you using the email address supplied.</p><a class="button" href="/professional-learning.html">Return to Professional Learning</a></div></section></main>
+<footer><div><span>Learning Without Limits Academy Trust</span><span>Winning hearts and inspiring minds to learn without limits.</span><a class="admin-link" href="/admin/">Admin</a></div></footer>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user && window.location.hash) {
+        window.netlifyIdentity.open();
+      }
+    });
+    window.netlifyIdentity.on("login", function() {
+      if (window.location.pathname !== "/admin/" && window.location.pathname !== "/admin") {
+        window.location.href = "/admin/";
+      }
+    });
+  }
+</script>
+
+</body></html>
